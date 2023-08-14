@@ -1,16 +1,22 @@
 const express = require ('express');
-const path= require ('path');
-
 const app = express ();
-
+const path= require ('path');
+const publicFolderPath=path.resolve(__dirname, './public');
+app.use(express.static(publicFolderPath));
 
 app.listen (8080, () =>{
-    console.log ('server corriendo en el puerto 8080');
-})
-
-
-app.use(express.static('public'))
+    console.log ('MercadoLiebre corriendo en el puerto 8080');
+});
 
 app.get ('/', (req, res)=>{
-    res.sendFile(path.join (__dirname, './views/home.html'))
-})
+    res.sendFile(path.resolve(__dirname, './views/home.html'))
+});
+
+
+app.get ('/creaTuCuenta', (req, res)=>{
+    res.sendFile(path.join (__dirname, './views/CreaTuCuenta.html'))
+});
+
+app.get ('/ingresa', (req, res)=>{
+    res.sendFile(path.join (__dirname, './views/ingresa.html'))
+});
