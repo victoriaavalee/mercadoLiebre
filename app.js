@@ -1,5 +1,6 @@
 const express = require ('express');
 const app = express ();
+const PORT= process.env.PORT || 8080;
 const path= require ('path');
 const publicFolderPath=path.resolve(__dirname, './public');
 app.use(express.static(publicFolderPath));
