@@ -1,3 +1,4 @@
+/****************************************************HEADER**********************************************/
 body{ 
     font-family:'Roboto';
     background-color: #ebebeb;
@@ -5,18 +6,20 @@ body{
     box-sizing: border-box;
 }
 
-
-.fa-magnifying-glass{
-    cursor: pointer;
+a{
+    text-decoration: none;
 }
+
 .main-header{
     background-color:#EAC926;
     padding: 20px;
 }
+
 .main-header-top{
     display: flex;
     justify-content: space-between
 }
+
 .main-header-top div {
     display: flex;
     justify-content: space-around;
@@ -67,39 +70,62 @@ img {
     max-height: 100%;
 }
 
-h3{
-    font-size:24px;
-    margin:0;
-}
-
+/****************************************************MAIN*******************************************/
 
 .login-conteiner{
     background-color: white;
-    box-sizing: border-box;
-    margin: auto;
     padding: 30px;
     width: 45%;
     border-radius: 8px;
-    display: flex;
-    justify-content: center;
+    margin: auto;
+}
+.login-conteiner{
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.boton-enviar{
+.title-login{
+    font-size:25px;
+    margin:0;
+    font-weight: bold;
+    text-align:left;
+}
+
+.login-form-name{
+/*    margin:0; */
+    margin: 15px;
+    text-align:left;
+    font-size:20px;
+}
+
+.login-form-password{
+/*    margin:0; */
+    margin: 15px;
+    text-align:left;
+    font-size:20px;
+}
+
+.input-login{
+    width : 100%;
+    height: 35px;
+}
+
+.button-enviar{
     background-color:#1259c3;
     padding: 10px 10px;
     border-radius:8px;
-    margin-top: 5%;
-    cursor: pointer; 
+    margin-top: 5%; 
+    width: 30%;
+    color:white;
+    text-decoration: none;
+}
+
+.div-enviar{
     display: flex;
     justify-content: center;
 }
 
-.login-form{
-    display: flex;
-    flex-direction: column;
-}
+/****************************************************************FOOTER*************************************************/
 
 footer{ text-align:center; font-size: 12px; background-color: white;}
 
@@ -116,6 +142,10 @@ footer{ text-align:center; font-size: 12px; background-color: white;}
 }
 .Copyright{color: #666;}
 
+
+
+
+/**************************************************VISTA CELULAR****************************************/
 
 @media (min-width:361px){
     header div{
@@ -137,6 +167,7 @@ footer{ text-align:center; font-size: 12px; background-color: white;}
     }
     
 }
+/**************************************************VISTA TABLET/PC**************************************/
 
 @media(min-width:769px){
     header div{
@@ -161,17 +192,5 @@ footer{ text-align:center; font-size: 12px; background-color: white;}
     .conteiner-footer{
         display: flex;
         padding: 45px;
-    }
-    .login-conteiner{
-        background-color:white;
-        box-sizing: border-box;
-        margin: auto;
-        padding: 30px;
-        width: 35%;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
     }
 }
