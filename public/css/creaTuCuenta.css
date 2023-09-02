@@ -115,7 +115,7 @@ h3{
 }
 
 .inputs{
-    width : 210px;
+    width : 80px;
     height: 30px;
 }
 /****************************************************************FOOTER*************************************************/
@@ -140,7 +140,7 @@ footer{
     color: #666;
 }
 
-/**************************************************VISTA CELULAR****************************************/
+/**************************************************VISTA 1****************************************/
 
 @media (min-width:361px){
     header div{
@@ -157,12 +157,17 @@ footer{
         max-width: 769px;
         margin: auto;
     }      
-    /*.fa-solid{
+ /*   .fa-solid{
         margin-top: 15px;
     }*/
+    /*main*/
+    .inputs{
+        width : 85%;
+        height: 30px;
+    }
 }
 
-/**************************************************VISTA TABLET/PC**************************************/
+/**************************************************VISTA 2**************************************/
 
 @media(min-width:769px){
     header div{
@@ -184,9 +189,13 @@ footer{
         display: flex;
         
     }
-    .conteiner-footer{
-        display: flex;
-        padding: 45px;
+    /*main*/
+    .register{
+        width: 50%;
+    }
+    .inputs{
+        width : 250px;
+        height: 30px;
     }
     main div{
         justify-content: space-between;
@@ -198,9 +207,10 @@ footer{
     .name-nomeuser, .correo-fecha, .dom-foto, .contraseñas{
         display: flex;
         justify-content:space-between;
-    }
-    .inputs{
-        width : 250px;
-        height: 30px;
+    } 
+    /*footer*/
+    .conteiner-footer{
+        display: flex;
+        padding: 45px;
     }
 }
