@@ -50,102 +50,100 @@
     </header>
     <main>
         <div class="register">
-            <h3>Registro de usuario</h3>
-            <div class="name-nomeuser">
-                <div class="name">
-                    <p>Nombre y apellido:</p>
+            <form action="./" method="GET">
+                <h3>Registro de usuario</h3>
+                <div class="name-nomeuser">
+                    <div class="name">
+                        <p>Nombre y apellido:</p>
+                        <label></label>
+                        <input type="text" class="inputs" name="nombreUsuario" required="">
+                    </div>
+                    <div class="name">
+                        <p>Nombre de usuario:</p>
+                        <label></label>
+                        <input type="text" class="inputs" name="nombreUsuario" required>
+                    </div>
+                </div>
+                <div class="correo-fecha">
+                    <div class="correo">
+                        <p>Correo electrónico:</p>
+                        <label></label>
+                        <input type="email" class="inputs" name="emailUsuario" required>
+                    </div>
+                    <div class="fecha-nacimiento">
+                        <p>Fecha de nacimiento:</p>
+                        <input type="date" class="inputs" name="fecha" required>
+                    </div>
+                </div>
+                <div class="dom-foto">
+                    <div class="domicilio">
+                        <p>Domicilio:</p>
+                        <label></label>
+                        <input type="text" class="inputs" name="domicilio" required>
+                    </div>
+                    <div class="foto-user">
+                        <p>Foto de usuario:</p>
+                        <input type="file" name="imagenDePerfil" required>
+                    </div>
+                </div>
+                <div class="perfil-usuario">
+                    <p>Perfil de usuario:</p>
                     <label></label>
-                    <input type="text" class="inputs" name="nombreUsuario" required="">
+                        <input type="radio"
+                        name="perfil-user"> Comprar
+                        <input type="radio"
+                        name="perfil-user">Vender
                 </div>
-                <div class="name">
-                    <p>Nombre de usuario:</p>
-                    <label></label>
-                    <input type="text" class="inputs" name="nombreUsuario" required>
+                <div class="intereses">
+                    <p>Intereses</p>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses">
+                            Electro
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses">
+                            Moda
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses">
+                            Hogar
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses">
+                            Jugueteria
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses" >
+                            Vida sana
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="correo-fecha">
-                <div class="correo">
-                    <p>Correo electrónico:</p>
-                    <label></label>
-                    <input type="email" class="inputs" name="emailUsuario">
+                <div class="contraseñas">
+                    <div>
+                        <p>Contraseña:</p>
+                        <label></label>
+                        <input type="password" class="inputs" name="passwordUsuario" required>
+                    </div>
+                    <div>
+                        <p>Confirmar contraseña:</p>
+                        <label></label>
+                        <input type="password" class="inputs" name="passwordUsuario" required>
+                    </div>
                 </div>
-                <div class="fecha-nacimiento">
-                    <p>Fecha de nacimiento:</p>
-                    <input type="date" class="inputs" name="fecha">
+                <div class="buttons">
+                    <button class="red-button" type="reset">Borrar</button>
+                    <button class="blue-button" type="submit">Enviar</button>
                 </div>
-            </div>
-            <div class="dom-foto">
-                <div class="domicilio">
-                    <p>Domicilio:</p>
-                    <label></label>
-                    <input type="text" class="inputs" name="domicilio" required>
-                </div>
-                <div class="foto-user">
-                    <p>Foto de usuario:</p>
-                    <input type="file"
-                    name="imagenDePerfil">
-                </div>
-            </div>
-            <div class="perfil-usuario">
-                <p>Perfil de usuario:</p>
-                <label>
-                    <input type="radio"
-                    name="perfil-user"> Comprar
-                </label>
-                <label>
-                    <input type="radio"
-                    name="perfil-user">Vender
-                </label>
-            </div>
-            <div class="intereses">
-                <p>Intereses</p>
-                <div>
-                    <label>
-                        <input type="checkbox" name="intereses">
-                        Electro
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox" name="intereses">
-                        Moda
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox" name="intereses">
-                        Hogar
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox" name="intereses">
-                        Jugueteria
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="checkbox" name="intereses" >
-                        Vida sana
-                    </label>
-                </div>
-            </div>
-            <div class="contraseñas">
-                <div>
-                    <p>Contraseña:</p>
-                    <label></label>
-                    <input type="password" class="inputs" name="passwordUsuario" required>
-                </div>
-                <div>
-                    <p>Confirmar contraseña:</p>
-                    <label></label>
-                    <input type="password" class="inputs" name="passwordUsuario" required>
-                </div>
-            </div>
-            <div class="buttons">
-                <button class="red-button" type="reset">Borrar</button>
-                <button class="blue-button" type="submit">Enviar</button>
-            </div>
+            </form>
         </div>
     </main>
     <footer class="main-footer">
