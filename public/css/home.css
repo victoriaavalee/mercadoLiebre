@@ -162,12 +162,18 @@ footer{ text-align:center; font-size: 12px; background-color: white;}
         max-width: 769px;
         margin: auto;
     }
+    /*main*/
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 10px 10px 10px rgb(100, 100, 100);
     }   
     .des{
         display:inline;
         font-size: 16px;
+    }
+    /*footer*/
+    .fa-solid{
+        margin-top: 15px;
+
     }
 }
 
