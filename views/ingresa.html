@@ -50,20 +50,23 @@
     </header>
     <main>
         <div class="login-conteiner">
-            <p class="title-login">Login</p>
-            <div class="login-form">
-                <div class="login-form-name">
-                    <p>Nombre de usuario:</p>
-                    <input type="text" class="input-login" name="nombre" required>
+            <form action="./" method="GET">
+                <p class="title-login">Login</p>
+                <div class="login-form">
+                    <div class="login-form-name">
+                        <label>Nombre de usuario:</label>
+                        <input type="text" class="input-login" name="nameUsuario" required>
+                    </div>
+                    <div class="login-form-password">
+                        <label>Contraseña:</label>
+                        <input type="password" class="input-login" name="passwordUsuario" required>
+                    </div>
+                    <!--<button type="submit" class="button-enviar" >Enviar</button>-->
+                    <div class="div-enviar"> 
+                        <button type="submit" class="button-enviar">Enviar</button>
+                    </div>
                 </div>
-                <div class="login-form-password">
-                    <p>Contraseña:</p>
-                    <input type="password" class="input-login" name="passwordUsuario" required>
-                </div>
-                <div class="div-enviar">
-                    <button class="button-enviar" type="submit"><a href="/">Enviar</a></button>
-                </div>
-            </div>  
+            </form>
         </div>
     </main>
     <footer class="main-footer">
