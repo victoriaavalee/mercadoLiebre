@@ -14,7 +14,7 @@ app.get ('/', (req, res)=>{
 });
 
 app.get ('/creaTuCuenta', (req, res)=>{
-    res.sendFile(path.join (__dirname, './views/CreaTuCuenta.html'))
+    res.sendFile(path.join (__dirname, './views/creaTuCuenta.html'))
 });
 
 app.get ('/ingresa', (req, res)=>{
